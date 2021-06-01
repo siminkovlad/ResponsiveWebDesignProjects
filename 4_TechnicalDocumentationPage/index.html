@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Technical Documentation Page</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap">
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav id="navbar">
+                <header>
+                    <h1>HTML Documentation</h1>
+                </header>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#hypertext_markup_language">Hypertext Markup Language</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#your_first_web_page">Your first web page</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#markup">Markup</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#elements">Elements</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#attributes">Attributes</a>
+                    </li>
+                </ul>
+            </nav>
+            <main id="main-doc">
+                <section id="hypertext_markup_language" class="main-section">
+                    <header>
+                        <h1>Hypertext Markup Language</h1>
+                    </header>
+                    <article>
+                        <p>
+                            <strong>Hypertext Markup Language (HTML)</strong> is the standard markup language for
+                            documents designed to be displayed in a web browser. It can be assisted by technologies such
+                            as <em>Cascading Style Sheets (CSS)</em> and scripting languages such as <em>JavaScript</em>.
+                        </p>
+                        <p>
+                            Web browsers receive HTML documents from a web server or from local storage and render the
+                            documents into multimedia web pages. HTML describes the structure of a web page semantically
+                            and originally included cues for the appearance of the document.
+                        </p>
+                    </article>
+                </section>
+                <section id="your_first_web_page" class="main-section">
+                    <header>
+                        <h1>Your first web page</h1>
+                    </header>
+                    <article>
+                        <p>The following is an example of the classic "Hello, World!" program:</p>
+                        <code>
+                            &lt;!DOCTYPE html&gt;
+                            <br>
+                            &lt;html&gt;
+                            <br>
+                            &lt;head&gt;
+                            <br>
+                            &lt;title&gt;Hello, World!&lt;/title&gt;
+                            <br>
+                            &lt;/head&gt;
+                            <br>
+                            &lt;body&gt;
+                            <br>
+                            &lt;p&gt;Hello world!&lt;/p&gt;
+                            <br>
+                            &lt;/body&gt;
+                            <br>
+                            &lt;/html&gt;
+                        </code>
+                    </article>
+                </section>
+                <section id="markup" class="main-section">
+                    <header>
+                        <h1>Markup</h1>
+                    </header>
+                    <article>
+                        <p>
+                            HTML markup consists of several key components, including those called tags (and their
+                            attributes), character-based data types, character references and entity references.
+                        </p>
+                        <ul>
+                            <li>
+                                &lt;!DOCTYPE html&gt; — important component is the HTML document type declaration, which
+                                triggers standards mode rendering.
+                            </li>
+                            <li>
+                                The text between &lt;html&gt; and &lt;/html&gt; — describes the web page.
+                            </li>
+                            <li>
+                                The text between &lt;body&gt; and &lt;/body&gt; — is the visible page content.
+                            </li>
+                            <li>
+                                The text between &lt;head&gt; and &lt;/head&gt; — is a container for metadata (data
+                                about data).
+                            </li>
+                            <li>
+                                HTML documents imply a structure of nested HTML elements.
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section id="elements" class="main-section">
+                    <header>
+                        <h1>Elements</h1>
+                    </header>
+                    <article>
+                        <p>
+                            An HTML element is an individual component of an HTML (Hypertext Markup Language) document
+                            or web page.
+                        </p>
+                        <p>
+                            HTML is composed of a tree of HTML nodes, such as text nodes. Each node can have HTML
+                            attributes specified. Nodes can also have content, including other nodes and text. Many HTML
+                            nodes represent semantics, or meaning.
+                        </p>
+                        <p>
+                            In the simple, general case, the extent of an element is indicated by a pair of tags:
+                            a "start tag" &lt;p&gt; and "end tag" &lt;/p&gt;. The text content of the element, if
+                            any, is placed between these tags.
+                        </p>
+                    </article>
+                </section>
+                <section id="attributes" class="main-section">
+                    <header>
+                        <h1>Attributes</h1>
+                    </header>
+                    <article>
+                        <p>
+                            Most of the attributes of an element are name-value pairs, separated by = and written
+                            within the start tag of an element after the element's name.
+                        </p>
+                        <p>
+                            The value may be enclosed in single or double quotes, although values consisting of certain
+                            characters can be left unquoted in HTML (but not XHTML). Leaving attribute values unquoted
+                            is considered unsafe.
+                        </p>
+                        <p>
+                            In contrast with name-value pair attributes, there are some attributes that affect the
+                            element simply by their presence in the start tag of the element.
+                        </p>
+                        <p>There are several common attributes that may appear in many elements :</p>
+                        <ul>
+                            <li>
+                                <p>
+                                    The id attribute provides a document-wide unique identifier for an element. This is
+                                    used to identify the element so that stylesheets can alter its presentational
+                                    properties, and scripts may alter, animate or delete its contents or presentation.
+                                </p>
+                                <code>&lt;p id="par1"&gt;Text&lt;/p&gt;</code>
+                            </li>
+                            <li>
+                                <p>
+                                    The class attribute provides a way of classifying similar elements. This can be
+                                    used for semantic or presentation purposes.
+                                </p>
+                                <code>&lt;p class="paragraphs"&gt;Text&lt;/p&gt;</code>
+                            </li>
+                            <li>
+                                <p>
+                                    An author may use the style attribute to assign presentational properties to a
+                                    particular element.
+                                    It is considered better practice to use an element's id or class attributes to
+                                    select the element from within a stylesheet, though sometimes this can be too
+                                    cumbersome for a simple, specific, or ad hoc styling.
+                                </p>
+                                <code>
+                                    &lt;p style="color: red"&gt;Text&lt;/p&gt;
+                                </code>
+                            </li>
+                            <li>
+                                <p>
+                                    The title attribute is used to attach subtextual explanation to an element.
+                                    In most browsers this attribute is displayed as a tooltip.
+                                </p>
+                                <code>&lt;p title="Hello"&gt;Text&lt;/p&gt;</code>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

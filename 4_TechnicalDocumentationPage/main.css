@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5;
+    min-width: 300px;
+    background: #ffffff;
+}
+
+nav {
+    position: fixed;
+    border-right: solid rgba(0, 22, 22, 0.4);
+    height: 100%;
+    width: 300px;
+}
+
+nav > header {
+    text-align: center;
+}
+
+nav > ul {
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 70%;
+}
+
+nav li {
+    border-top: 1px solid;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4d4e53;
+    padding: 20px 30px;
+    display: block;
+}
+
+a:hover {
+    background: rgba(240, 240, 240, 1);
+}
+
+main {
+    margin-left: 320px;
+    padding: 10px;
+}
+
+main p {
+    text-align: justify;
+}
+
+section > article {
+    margin: 15px;
+}
+
+section li {
+    margin: 10px 0;
+}
+
+code {
+    display: block;
+    background: #f7f7f7;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+@media (max-width: 1000px) {
+    #navbar {
+        background: white;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        max-height: 268px;
+        border-right: none;
+    }
+
+    #navbar ul {
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        height: 190px;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        margin-top: 270px;
+    }
+}
