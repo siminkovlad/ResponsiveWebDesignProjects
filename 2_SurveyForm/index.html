@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap">
+    </head>
+    <body>
+        <div id="wrapper">
+            <main>
+                <header>
+                    <h1 id="title">Survey Form</h1>
+                </header>
+                <section>
+                    <p id="description">Questionnaire</p>
+                    <form id="survey-form" action="#" method="GET">
+                        <fieldset>
+                            <legend>About yourself</legend>
+                            <div class="row">
+                                <div class="label-alignment">
+                                    <label id="name-label" for="name">Name<span>*</span>:</label>
+                                </div>
+                                <div class="fields">
+                                    <input
+                                        id="name"
+                                        class="input"
+                                        name="name"
+                                        type="text"
+                                        placeholder="Enter your name"
+                                        required
+                                    >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="label-alignment">
+                                    <label id="email-label" for="email">Email<span>*</span>:</label>
+                                </div>
+                                <div class="fields">
+                                    <input
+                                        id="email"
+                                        class="input"
+                                        name="email"
+                                        type="email"
+                                        placeholder="Enter your email"
+                                        required
+                                    >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="label-alignment">
+                                    <label id="number-label" for="number">Age:</label>
+                                </div>
+                                <div class="fields">
+                                    <input
+                                        id="number"
+                                        class="input"
+                                        name="age"
+                                        type="number"
+                                        placeholder="Enter your age"
+                                        min="1"
+                                        max="100"
+                                    >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="label-alignment">
+                                    <label for="dropdown">Where are you from?</label>
+                                </div>
+                                <div class="fields">
+                                    <select id="dropdown" class="dropdown" name="country">
+                                        <option disabled>Select an option</option>
+                                        <option value="europe">Europe</option>
+                                        <option value="samerica">South America</option>
+                                        <option value="namerica">North America</option>
+                                        <option value="africa">Africa</option>
+                                        <option value="asia">Asia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="radio-male">Male</label>
+                                <input id="radio-male" type="radio" name="sex" value="male">
+                                <label for="radio-female">Female</label>
+                                <input id="radio-female" type="radio" name="sex" value="female">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>What do you like?</legend>
+                            <div class="label-alignment">
+                                <label for="books">Books</label>
+                            </div>
+                            <div class="fields">
+                                <input id="books" class="checkbox" name="like" type="checkbox" value="books">
+                            </div>
+                            <div class="label-alignment">
+                                <label for="tv">TV</label>
+                            </div>
+                            <div class="fields">
+                                <input id="tv" class="checkbox" name="like" type="checkbox" value="tv">
+                            </div>
+                            <div class="label-alignment">
+                                <label for="music">Music</label>
+                            </div>
+                            <div class="fields">
+                                <input id="music" class="checkbox" name="like" type="checkbox" value="music">
+                            </div>
+                            <div class="label-alignment">
+                                <label for="animals">Animals</label>
+                            </div>
+                            <div class="fields">
+                                <input id="animals" class="checkbox" name="like" type="checkbox" value="animals">
+                            </div>
+                            <div class="row">
+                                <div class="label-alignment">
+                                    <label for="comments">You can write more information here:</label>
+                                </div>
+                                <div class="fields">
+                                    <textarea
+                                        id="comments"
+                                        name="comments"
+                                        placeholder="Enter more information here..."
+                                    >
+                                    </textarea>
+                                </div>
+                            </div>
+                            <button id="submit" type="submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
