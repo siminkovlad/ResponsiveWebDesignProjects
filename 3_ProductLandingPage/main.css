@@ -1,0 +1,192 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    background: #F8F2E7;
+    text-align: center;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background: #D2D3D5;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    padding: 20px;
+}
+
+a:hover {
+    background: #e9e9e9;
+}
+
+ul li:nth-child(-n+2) a {
+    border-right: 1px solid black;
+}
+
+main {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#houses {
+    width: 100%;
+}
+
+iframe {
+    max-width: 600px;
+    width: 100%;
+}
+
+#pricing {
+    display: flex;
+    justify-content: space-around;
+}
+
+.element {
+    border: 3px solid grey;
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fffdd0;
+    margin: 20px;
+}
+
+.element h3 {
+    font-style: italic;
+    margin: 10px;
+}
+
+span {
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.element a {
+    border-top: 1px solid black;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"] {
+    width: 275px;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+#submit {
+    margin-top: 10px;
+    padding: 0 20px;
+    height: 30px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    cursor: pointer;
+    background: mistyrose;
+}
+
+footer {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    background: #D2D3D5;
+}
+
+footer ul {
+    margin-top: 10px;
+}
+
+footer a {
+    padding: 10px;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .houses-img img {
+        height: auto;
+    }
+
+    .element {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .form h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 125px;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    header ul {
+        margin-top: 15px;
+    }
+
+    .form h2 {
+        font-size: 12px;
+    }
+}

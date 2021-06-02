@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+                <div>
+                    <img id="header-img" alt="Company logo" src="./img/logo.png">
+                </div>
+                <nav id="nav-bar">
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="#houses">Houses</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="houses">
+                    <h2>How we build</h2>
+                    <iframe
+                        id="video"
+                        height="315"
+                        src="https://www.youtube.com/embed/3CeYsZdvR64"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </section>
+                <h2>Our houses</h2>
+                <section id="pricing">
+                    <div class="element">
+                        <h3>Classic house</h3>
+                        <div class="houses-img">
+                            <img alt="Classic house" src="./img/1.jpg">
+                        </div>
+                        <p><span>$10000</span></p>
+                        <a href="#">More details</a>
+                    </div>
+                    <div class="element">
+                        <h3>Modern house</h3>
+                        <div class="houses-img">
+                            <img alt="Modern house" src="./img/2.png">
+                        </div>
+                        <p><span>$1000000</span></p>
+                        <a href="#">More details</a>
+                    </div>
+                    <div class="element">
+                        <h3>Countryside house</h3>
+                        <div class="houses-img">
+                            <img alt="Countryside house" src="./img/3.jpg">
+                        </div>
+                        <p><span>$1000</span></p>
+                        <a href="#">More details</a>
+                    </div>
+                </section>
+                <section class="form">
+                    <h2>Enter your email and our consultant will write you</h2>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                        <input id="submit" type="submit" value="Submit">
+                    </form>
+                </section>
+            </main>
+            <footer id="contacts">
+                <ul>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Social network</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+                <p>© Copyright 2020</p>
+            </footer>
+        </div>
+    </body>
+</html>
